@@ -1,4 +1,5 @@
 The source for my resume: compile with `pdflatex resume.tex`
 
 To use, make a file name "personalinfo.tex" with the personal information
-(the stuff that doesn't go on github).  See sample_personalinfo.tex for hints.
+(the stuff that doesn't go on github - this is done so bots can't scrape my
+email / phone).  See sample_personalinfo.tex for hints.
