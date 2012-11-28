@@ -1,0 +1,109 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,letterpaper]{moderncv}
+
+% moderncv themes
+					      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[margin=1in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+\usepackage{multicol}
+
+% personal data
+\InputIfFileExists{personalinfo.tex}{}{
+\firstname{John}
+\familyname{Smith Doe}
+\mobile{(123) 456 7890}
+\email{me@email.com}
+}
+% \quote{Having fun with Systems and Security}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2009 - 2013}{BS in Computer Science and Math}{Carnegie Mellon
+University}{Pittsburgh}{\textit{3.80 QPA}}{
+\begin{multicols}{2}
+\begin{itemize}
+\item 15-410 Operating System Design
+\item 15-349 Computer and Network Security
+\item 15-440 Distributed Systems
+\item 15-418 Parallel Computer Architecture
+\end{itemize}
+\end{multicols}
+}
+
+\section{Experience}
+\cventry{Summer 2012}{Software Engineer Intern}{Apple Inc.}{Cupertino}{}{
+\begin{itemize}
+\item Designed framework for testing the Mac OSX virtual memory system.
+\item Wrote driver for recording and replaying malloc traces.
+\end{itemize}}
+
+\cventry{Summer 2011}{Software Engineer Intern}{Google Inc.}{Mountain View}{}{
+\begin{itemize}
+\item Experimented with different interfaces for social search ads.
+\item Lead a group to develop an application for the Google Fishbowl hackathon.
+\item Organized an introductory computer security Capture The Flag competition.
+\end{itemize}}
+
+\cventry{Fall 2010}{Teaching Assistant}{Carnegie Mellon University in
+Qatar}{Doha}{}
+ {
+\begin{itemize}
+\item Helped teach, grade, and administer 15-211 Fundamentals of Data
+Structures and Algorithms.
+\end{itemize}
+}
+
+\cventry{Summer 2010}{Software Engineer Intern}{Amazon.com}{Seattle}{}
+ {
+\begin{itemize}
+\item Developed a new marketing email template for Amazon Kindle.
+\item Established a marketing database for Amazon Kindle.
+\end{itemize}
+}
+
+\cventry{Spring 2010}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh}{}{
+\begin{itemize}
+\item Helped teach, grade, and administer 15-123 Systems Skills in C and Unix.
+\end{itemize}}
+
+\cventry{2009-2010}{Research Assistant}{Carnegie Mellon University Robotics
+Insitute}{Pittsburgh}{}{
+\begin{itemize}
+\item Developed a GUI to control automated agricultural robots.
+\end{itemize}}
+
+\section{Computer Skills}
+\cvcomputer{Fluency}{Go, C/C++, Python, Bash, Make}{}{}
+\cvcomputer{Exposure}{Perl, Ruby, Java, x86, ARM, SML}{}{}
+
+\section{Awards and Extracurriculars}
+\cventry{2011-2012}{Member}{Plaid Parliament of Pwning}{}{}{2nd Place Defcon
+CTF 2012, 1st Place CSAW CTF 2012, 2nd Place CSAW CTF 2011}
+\cventry{2012}{President}{Sigma Tau Gamma Fraternity, Delta Xi Chapter}{}{}{}
+\cventry{2008}{Eagle Scout}{Boy Scouts of America}{}{}{}
+
+\end{document}
