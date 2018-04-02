@@ -11,7 +11,6 @@
 % moderncv themes
 					      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
@@ -33,9 +32,12 @@
 \email{me@email.com}
 }
 
-% \quote{Having fun with Systems and Security}                 % optional, remove the line if not wanted
+% \quote{Having fun with Systems and Security}
 
-\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{} 
+
+\newcommand{\cventrysection}[1]{\textcolor{color1}{\textbf{#1}}}
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -43,90 +45,85 @@
 \maketitle
 
 \section{Experience}
- \cventry{2015 - 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
-\textit{Prepared post-sales organization for operational readiness.}
- \begin{itemize}
- \item Created and delivered training on an incident response process. 
- \item Organized cross-organization incident "fire drill" to educate and inform executives. 
- \item Developed extensive  training program for on-boarding post-sales new hires.
-\end{itemize}
-\textit{Led project to allow customers to associate resource usage with queries.}
+ \cventry{2017 - 2018}{Lead Engineer}{Alphaflow}{San Francisco, CA}{}{
+\cventrysection{Brought stability and structure to engineering team.}
 \begin{itemize}
- \item Designed, managed, guided the release of, and delivered training for feature.
- \item Built ncurses application "memsql-top" to deliver a usable interface for customers.
-\end{itemize}
-\textit{Advised engineering team on performance investigations.}
-\begin{itemize}
- \item Optimized LLVM code generation by profiling and inspecting byte code.
- \item Made engine changes necessary for precise profiling.
- \item Trained other developers on use of flame graphs and other tools.
-\end{itemize}
-\textit{Guided team to better resolve production issues.}
-\begin{itemize}
- \item Investigated and resolved many customer production outages.
- \item Trained other engineers on USE method for diagnosing performance problems.
- \end{itemize}
- }
-
-
-\cventry{2013 - 2015}{Member of Technical Staff}{Delphix}{San Francisco, CA}{}{
-\textit{Core developer on ZFS filesystem team.} 
-\begin{itemize}
-\item Built support for the removal of devices from a ZFS storage pool.
-\item Built ZFS block allocation strategy that defragmented devices based on load.
-\item Created tool "zfs-precommit" to run all tests required by ZFS developers.
-\end{itemize}
-\textit{Led the security team.}
-\begin{itemize}
-\item Created a signing server that provided code signatures for authenticated upgrades.
-\item Guided the implementation of challenge/response login to Delphix engine.
-\end{itemize}
-\textit{Owner of developer build infrastructure.}
-\begin{itemize}
-\item Introduced Puppet and Jenkins Job DSL to manage server configuration.
-\item Built infrastructure for compiling and managing third party packages.
-\item Built processes for creating new build servers capable of compiling DelphixOS.
-\end{itemize}
- }
-
-\cventry{Spring 2013}{Teaching Assistant}{Carnegie Mellon
-University}{Pittsburgh, PA}{}
- {
-\begin{itemize}
-\item Helped teach 15-418 Parallel Computer Architecture and Programming.
-\item Built new course website allowing students to interact with course
-material.
+% \item Created a culture of continuous deployment and code review.
+\item Mentored engineering team on software architecture and project planning.
+\item Taught effective use of server technologies and databases.
 \end{itemize}
 }
 
-\cventry{Summer 2012}{Software Engineer Intern}{Apple Inc.}{Cupertino, CA}{}{
+\cventry{2015 - 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
+\cventrysection{Prepared post-sales organization for operational readiness.}
 \begin{itemize}
-\item Designed framework for testing the Mac OSX virtual memory system.
-\end{itemize}}
-
-\cventry{Summer 2011}{Software Engineer Intern}{Google Inc.}{Mountain View,
-CA}{}{
+ \item Created an cross-organization incident response process. 
+ \item Organized company-wide "fire drill" to educate and inform executives of process. 
+ \item Developed extensive training program for on-boarding post-sales new hires.
+\end{itemize}
+\cventrysection{Led engineering team to enable resource accounting of database queries.}
 \begin{itemize}
-\item Experimented with different interfaces for social search ads.
-% \item Led a group to develop an application for the Google Fishbowl hackathon.
-% \item Organized an introductory computer security Capture The Flag competition.
-\end{itemize}}
+ \item Managed a team of three engineers to deliver a production ready release early.
+ \item Built and delivered training on the feature to customers and the sales team.
+ \item Wrote feedback to move an engineer off a performance improvement plan.
+\end{itemize}
+\cventrysection{Advised and assisted engineering team.}
+\begin{itemize}
+ \item Mentored a college engineering intern and helped them write a viral blog post.
+ \item Investigated and wrote post-mortems for customer production outages.
+ \item Interviewed engineers and product managers and helped college recruiting.
+\end{itemize}
+ }
 
-%\cventry{Fall 2010}{Teaching Assistant}{Carnegie Mellon University in
-%Qatar}{Doha}{}
+\cventry{2013 - 2015}{Member of Technical Staff}{Delphix}{San Francisco, CA}{}{
+\cventrysection{Led the security team.}
+\begin{itemize}
+\item Ran weekly meetings to plan security improvements and respond to incidents.
+% \item Created a signing server that provided code signatures for authenticated upgrades.
+\item Advised the implementation of challenge/response login to Delphix engine.
+\end{itemize}
+% \cventrysection{Owner of developer build infrastructure.}
+% \begin{itemize}
+% \item Introduced Puppet and Jenkins Job DSL to manage server configuration.
+% \item Built infrastructure for compiling and managing third party packages.
+% \item Built processes for creating new build servers capable of compiling DelphixOS.
+% \end{itemize}
+\cventrysection{Contributed to the Zettabyte Filesystem (ZFS) team.}
+\begin{itemize}
+\item Evangelized team during college recruiting fairs and gave tech talks.
+\item Built support for the removal of devices from a ZFS storage pool.
+\item Built ZFS block allocation strategy that defragmented devices based on load.
+% \item Created tool "zfs-precommit" to run all tests required by ZFS developers.
+\end{itemize}
+ }
+
+% \cventry{2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
 % {
+%\cventrysection{15-418 Parallel Computer Architecture and Programming}
+% }
+
+% \cventry{2012}{Software Engineer Intern}{Apple Inc.}{Cupertino, CA}{}{
+% \cventrysection{OSX Performance Team}
+% }
+
+%\cventry{2011}{Software Engineer Intern}{Google Inc.}{Mountain View, CA}{}{
+% \cventrysection{Social Search Ads Team}
 %\begin{itemize}
-%\item Helped teach 15-211 Fundamentals of Data
-%Structures and Algorithms.
+%\item Experimented with different interfaces for social search ads.
+% \item Led a group to develop an novel privacy interface for the Google Fishbowl hackathon.
+% \item Organized an introductory computer security Capture The Flag competition.
 %\end{itemize}
 %}
 
-\cventry{Summer 2010}{Software Engineer Intern}{Amazon.com}{Seattle}{}
-{
-\begin{itemize}
-\item Improved accessibility for Kindle website and built new marketing email template.
-\end{itemize}
-}
+%\cventry{2010}{Teaching Assistant}{Carnegie Mellon University in Qatar}{Doha, Qatar}{}
+%{
+%\cventrysection{15-211 Fundamentals of Data Structures and Algorithms}
+%}
+
+%\cventry{2010}{Software Engineer Intern}{Amazon.com}{Seattle, WA}{}
+%{
+%\cventrysection{Kindle Sales Team}
+%}
 
 %\cventry{Spring 2010}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh}{}{
 %\begin{itemize}
@@ -141,13 +138,19 @@ CA}{}{
 
 \section{Education}
 \cventry{2009 - 2013}{BS in Computer Science and Mathematics}{Carnegie Mellon
-University}{Pittsburgh}{\textit{3.80 QPA}}{
+University}{}{}{
 }
 
-\section{Computer Skills}
-\cvcomputer{\textbf{Fluency}}{C/C++, Python, Bash, x86}{\textbf{Exposure}}{Go, Javascript, Java, Ruby, SML}
+%\section{Computer Skills}
+%\cvcomputer{\textbf{Fluency}}{C/C++, Go, Python, Bash, x86}{\textbf{Exposure}}{Javascript, Java, Ruby, OCaml}
 
 \section{Awards and Extracurriculars}
+\cventry{2012-2018}{Assistant Scoutmaster}{Boy Scouts of America}{}{}{
+\begin{itemize}
+\item Mentor young leaders in how to teach and inspire their peers.
+\item Plan and lead week-long wilderness backpacking trips.
+\end{itemize}
+}
 \cventry{2011-2015}{Member}{Plaid Parliament of Pwning}{}{}{
 \begin{multicols}{2}
 \begin{itemize}
