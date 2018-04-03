@@ -32,6 +32,13 @@
 \email{me@email.com}
 }
 
+\quote{Seeking a management position to inspire and mentor engineers.}
+
+\let\originalrecomputecvlengths\recomputecvlengths
+\renewcommand*{\recomputecvlengths}{%
+\originalrecomputecvlengths%
+\setlength{\quotewidth}{0.9\textwidth}}
+
 \nopagenumbers{} 
 
 \newcommand{\cventrysection}[1]{\textcolor{color1}{\textbf{#1}}}
@@ -41,6 +48,7 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
+
 
 \section{Experience}
  \cventry{2017 - 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
@@ -53,21 +61,22 @@
 }
 
 \cventry{2015 - 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
-\cventrysection{Prepared post-sales organization for operational readiness.}
+\cventrysection{Improved recruiting and onboarding effectiveness.}
+\begin{itemize}
+ \item Interviewed candidates in engineering, support, sales, and product management.
+ \item Created training material for on-boarding support and sales new hires.
+\end{itemize}
+\cventrysection{Achieved strategic organizational changes.}
 \begin{itemize}
  \item Created an cross-organization incident response process. 
- \item Developed extensive training program for on-boarding post-sales new hires.
+ \item Promoted standard processes for rigorous performance analysis.
+ \item Developed a culture of post-mortem analysis in engineering and post-sales.
 \end{itemize}
-\cventrysection{Led engineering team in a successful software release.}
-\begin{itemize}
- \item Managed a team of engineers to deliver a production ready release early.
- \item Worked with an engineer off to move them off a performance improvement plan.
-\end{itemize}
-\cventrysection{Advised and assisted engineering team.}
+\cventrysection{Effectively mentored individual engineers.}
 \begin{itemize}
  \item Mentored a college engineering intern and helped them write a viral blog post.
- \item Investigated and wrote post-mortems for customer production outages.
- \item Interviewed engineers and product managers and helped college recruiting.
+ \item Worked with an engineer off to complete their performance improvement plan.
+ \item Managed a team of three engineers to deliver a production-ready release early.
 \end{itemize}
  }
 
@@ -75,8 +84,9 @@
 \cventrysection{Led the security team.}
 \begin{itemize}
 \item Ran weekly meetings to plan security improvements and respond to incidents.
+\item Advised engineers in the development of majority security projects.
 % \item Created a signing server that provided code signatures for authenticated upgrades.
-\item Advised the implementation of challenge/response login to Delphix engine.
+% \item Advised the implementation of challenge/response login to Delphix engine.
 \end{itemize}
 % \cventrysection{Owner of developer build infrastructure.}
 % \begin{itemize}
@@ -86,17 +96,17 @@
 % \end{itemize}
 \cventrysection{Contributed to the Zettabyte Filesystem (ZFS) team.}
 \begin{itemize}
-\item Evangelized team during college recruiting fairs and gave tech talks.
-\item Built support for the removal of devices from a ZFS storage pool.
+\item Evangelized the team by talking at college career fairs and open source conferences.
+\item Extended ZFS to allow the removal removal of devices from the storage pool.
 \item Built ZFS block allocation strategy that defragmented devices based on load.
 % \item Created tool "zfs-precommit" to run all tests required by ZFS developers.
 \end{itemize}
  }
 
-% \cventry{2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
-% {
-%\cventrysection{15-418 Parallel Computer Architecture and Programming}
-% }
+\cventry{2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
+{
+\cventrysection{15-418 Parallel Computer Architecture and Programming}
+}
 
 % \cventry{2012}{Software Engineer Intern}{Apple Inc.}{Cupertino, CA}{}{
 % \cventrysection{OSX Performance Team}
@@ -137,15 +147,17 @@
 University}{}{}{
 }
 
-%\section{Computer Skills}
-%\cvcomputer{\textbf{Fluency}}{C/C++, Go, Python, Bash, x86}{\textbf{Exposure}}{Javascript, Java, Ruby, OCaml}
+\pagebreak
+
+\section{Technical Background}
+\cvlistdoubleitem{Computer Systems}{Performance Analysis}
+\cvlistdoubleitem{Database Tuning}{File Systems}
+\cvlistdoubleitem{Build Infrastructure}{Devops}
+\cvlistdoubleitem{Reverse Engineering}{Binary Exploitation}
+\cvlistdoubleitem{Debugging}{Customer Success}
 
 \section{Awards and Extracurriculars}
-\cventry{2012-2018}{Assistant Scoutmaster}{Boy Scouts of America}{}{}{
-\begin{itemize}
-\item Planned and led week-long wilderness backpacking trips.
-\end{itemize}
-}
+\cventry{2012-2018}{Assistant Scoutmaster}{Boy Scouts of America}{}{}{}
 \cventry{2011-2015}{Member}{Plaid Parliament of Pwning}{}{}{
 \begin{multicols}{2}
 \begin{itemize}
@@ -155,6 +167,6 @@ University}{}{}{
 \end{multicols}
 }
 \cventry{2012}{President}{Sigma Tau Gamma Fraternity, Delta Xi Chapter}{}{}{}
-% \cventry{2008}{Eagle Scout}{Boy Scouts of America}{}{}{}
+\cventry{2008}{Eagle Scout}{Boy Scouts of America}{}{}{}
 
 \end{document}
