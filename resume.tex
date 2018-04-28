@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[12pt,letterpaper]{moderncv}
+\documentclass[10pt,letterpaper]{moderncv}
 
 % moderncv themes
 					      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -32,8 +32,6 @@
 \email{me@email.com}
 }
 
-\quote{Seeking a management position to inspire and mentor engineers.}
-
 \let\originalrecomputecvlengths\recomputecvlengths
 \renewcommand*{\recomputecvlengths}{%
 \originalrecomputecvlengths%
@@ -51,46 +49,45 @@
 \begin{document}
 \maketitle
 
+\vspace{-1cm}
 
 \section{Experience}
- \cventry{2017 - 2018}{\textcolor{color1}{Lead Engineer}}{AlphaFlow}{San Francisco, CA}{}{
-\cventrysection{Brought stability and structure to engineering team.}
+ \cventry{Sep 2017 - Mar 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
+\cventrysection{Stabilized the backend website and brought process to the engineering team.}
 \begin{itemize}
-% \item Created a culture of continuous deployment and code review.
-\item Mentored engineering team on software architecture and project planning.
-\item Taught effective use of server technologies and databases.
+\item Mentored engineering team on software architecture, project planning, and CI/CD practices.
+\item Introduced Go and SQL to engineering team for more backend server development.
 \end{itemize}
 }
 
-\cventry{2015 - 2017}{\textcolor{color1}{Senior Performance Engineer}}{MemSQL}{San Francisco, CA}{}{
-\cventrysection{Achieved strategic organizational process changes.}
+\cventry{May 2015 - Sep 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
+\cventrysection{Improved the health of the post-sales organization}
 \begin{itemize}
- \item Created an cross-organization incident response process. 
- \item Promoted standard processes for rigorous performance analysis.
- \item Developed a culture of post-mortem analysis in engineering and post-sales.
+ \item Created a company incident response process unifying sales, engineering, support, and marketing. 
+ \item Introduced standard template for proposing product changes.
+ \item Standardized debugging process by introducing post-mortems, the USE method, and flamegraphs.
 \end{itemize}
-\vspace{\entrysectionspace}
-\cventrysection{Improved recruiting and onboarding effectiveness.}
-\begin{itemize}
- \item Interviewed candidates in engineering, support, sales, and product management.
- \item Created training material for on-boarding support and sales new hires.
-\end{itemize}
-\vspace{\entrysectionspace}
 \cventrysection{Effectively mentored individual engineers.}
+\vspace{\entrysectionspace}
 \begin{itemize}
- \item Mentored a college engineering intern and helped them write a viral blog post.
- \item Worked with an engineer to complete their performance improvement plan.
- \item Managed a team of three engineers to deliver a production-ready release early.
+ \item Mentored a college intern on a C++ project and helped them write a viral blog post.
+ \item Built wildly desired feature from customer survey to early release with a team of 3 engineers.
+\end{itemize}
+\vspace{\entrysectionspace}
+\cventrysection{Improved recruiting and on-boarding effectiveness.}
+\begin{itemize}
+\item Interviewed candidates in engineering, support, sales, and product management.
+\item Created training materials for on-boarding support and sales new hires.
 \end{itemize}
  }
 
-\cventry{2013 - 2015}{\textcolor{color1}{Member of Technical Staff}}{Delphix}{San Francisco, CA}{}{
+\cventry{Jul 2013 - May 2015}{Member of Technical Staff}{Delphix}{San Francisco, CA}{}{
 \cventrysection{Led the security team.}
 \begin{itemize}
 \item Ran weekly meetings to plan security improvements and respond to incidents.
 \item Advised engineers in the development of majority security projects.
-% \item Created a signing server that provided code signatures for authenticated upgrades.
 % \item Advised the implementation of challenge/response login to Delphix engine.
+\item Created a signing server that provided code signatures for authenticated upgrades.
 \end{itemize}
 \vspace{\entrysectionspace}
 % \cventrysection{Owner of developer build infrastructure.}
@@ -102,73 +99,56 @@
 \cventrysection{Contributed to the Zettabyte Filesystem (ZFS) team.}
 \begin{itemize}
 \item Evangelized the team by talking at college career fairs and open source conferences.
-\item Extended ZFS to allow the removal removal of devices from the storage pool.
-\item Built ZFS block allocation strategy that defragmented devices based on load.
-% \item Created tool "zfs-precommit" to run all tests required by ZFS developers.
+\item Extended ZFS to allow the live removal of devices from the storage pool.
+\item Built ZFS block allocation strategy that defragmented on-line devices based on load.
+\item Created tool \texttt{zfs-precommit} to improve efficiency of ZFS developers.
 \end{itemize}
  }
 
-%\cventry{2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
-%{
-%\cventrysection{15-418 Parallel Computer Architecture and Programming}
-%}
+\cventry{Spring 2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
+{
+\cventrysection{15-418 Parallel Computer Architecture and Programming}
+\begin{itemize}
+\item Mentored students on computer systems final projects.
+\end{itemize}
+}
 
-% \cventry{2012}{Software Engineer Intern}{Apple Inc.}{Cupertino, CA}{}{
-% \cventrysection{OSX Performance Team}
-% }
+\cventry{Summer 2012}{Software Engineer Intern (OSX Performance)}{Apple Inc.}{Cupertino, CA}{}{}
 
-%\cventry{2011}{Software Engineer Intern}{Google Inc.}{Mountain View, CA}{}{
-% \cventrysection{Social Search Ads Team}
+\cventry{Summer 2011}{Software Engineer Intern (Social Search Ads)}{Google Inc.}{Mountain View, CA}{}{}
 %\begin{itemize}
 %\item Experimented with different interfaces for social search ads.
-% \item Led a group to develop an novel privacy interface for the Google Fishbowl hackathon.
-% \item Organized an introductory computer security Capture The Flag competition.
+%\item Led a group to develop an novel privacy interface for the Google Fishbowl hackathon.
+%\item Organized an educational computer security Capture The Flag competition.
 %\end{itemize}
-%}
 
-%\cventry{2010}{Teaching Assistant}{Carnegie Mellon University in Qatar}{Doha, Qatar}{}
-%{
-%\cventrysection{15-211 Fundamentals of Data Structures and Algorithms}
-%}
+\cventry{Fall 2010}{Teaching Assistant}{Carnegie Mellon University in Qatar}{Doha, Qatar}{}
+{
+\cventrysection{15-211 Fundamentals of Data Structures and Algorithms}
+}
 
-%\cventry{2010}{Software Engineer Intern}{Amazon.com}{Seattle, WA}{}
-%{
-%\cventrysection{Kindle Sales Team}
-%}
+\cventry{Summer 2010}{Software Engineer Intern (Kindle Sales)}{Amazon.com}{Seattle, WA}{}
+{}
 
-%\cventry{Spring 2010}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh}{}{
-%\begin{itemize}
-%\item Helped teach 15-123 Systems Skills in C and Unix.
-%\end{itemize}}
-
-% \cventry{2009-2010}{Research Assistant}{Carnegie Mellon University Robotics
-% Insitute}{Pittsburgh}{}{
-% \begin{itemize}
-% \item Developed a GUI to control automated agricultural robots.
-% \end{itemize}}
+\cventry{Spring 2010}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}{
+\cventrysection{15-123 Systems Skills in C and Unix}
+}
 
 \section{Education}
 \cventry{2009 - 2013}{BS in Computer Science and Mathematics}{Carnegie Mellon
-University}{}{}{}
+University}{3.8 QPA}{}{}
 
-%\section{Technical Background}
-%\cvlistdoubleitem{Computer Systems}{Performance Analysis}
-%\cvlistdoubleitem{Database Tuning}{File Systems}
-%\cvlistdoubleitem{Build Infrastructure}{Devops}
-%\cvlistdoubleitem{Reverse Engineering}{Binary Exploitation}
-%\cvlistdoubleitem{Debugging}{Customer Success}
-
-\section{Awards and Extracurriculars}
+\section{Extracurriculars}
 \cventry{2012-2018}{Assistant Scoutmaster}{Boy Scouts of America}{}{}{}
 %\cventry{2011-2015}{Member}{Plaid Parliament of Pwning}{}{}{
 %\begin{multicols}{2}
 %\begin{itemize}
-%\item 1st Place Defcon CTF 2013, 2014
+%\item 1st Place DEFCON CTF 2013, 2014
 %\item 1st Place GITS CTF 2012-2015
 %\end{itemize}
 %\end{multicols}
 %}
-\cventry{2012}{President}{Sigma Tau Gamma Fraternity, Delta Xi Chapter}{}{}{}
-% \cventry{2008}{Eagle Scout}{Boy Scouts of America}{}{}{}
+\cventry{Fall 2012}{President}{Sigma Tau Gamma Fraternity, Delta Xi Chapter}{}{}{}
+\cventry{2008}{Eagle Scout}{Boy Scouts of America}{}{}{}
 
 \end{document}
