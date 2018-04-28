@@ -16,7 +16,7 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -39,99 +39,88 @@
 
 \nopagenumbers{} 
 
-\newcommand{\cventrysection}[1]{\textbf{#1}}
-
-\newcommand{\entrysectionspace}{2mm}
-
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
 
-\vspace{-1cm}
+\vspace{-0.5cm}
 
 \section{Experience}
- \cventry{Sep 2017 - Mar 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
-\cventrysection{Stabilized the backend website and brought process to the engineering team.}
+ \cventry{Oct 2017 - Mar 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
+Responsible for stabilizing the backend website and bringing process to the engineering team.
 \begin{itemize}
 \item Mentored engineering team on software architecture, project planning, and CI/CD practices.
 \item Introduced Go and SQL to engineering team for more backend server development.
 \end{itemize}
 }
 
-\cventry{May 2015 - Sep 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
-\cventrysection{Improved the health of the post-sales organization}
+\cventry{May 2015 - Oct 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
+Responsible for the performance of a real time database. Responsible for the
+process of diagnosing the system. Responsible for building a post-sales organization capable of responding to incidents.
 \begin{itemize}
  \item Created a company incident response process unifying sales, engineering, support, and marketing. 
- \item Introduced standard template for proposing product changes.
- \item Standardized debugging process by introducing post-mortems, the USE method, and flamegraphs.
-\end{itemize}
-\cventrysection{Effectively mentored individual engineers.}
-\vspace{\entrysectionspace}
-\begin{itemize}
+ \item Introduced post-mortems, the USE method, and flamegraphs to standardize the debugging process.
  \item Mentored a college intern on a C++ project and helped them write a viral blog post.
- \item Built wildly desired feature from customer survey to early release with a team of 3 engineers.
-\end{itemize}
-\vspace{\entrysectionspace}
-\cventrysection{Improved recruiting and on-boarding effectiveness.}
-\begin{itemize}
-\item Interviewed candidates in engineering, support, sales, and product management.
-\item Created training materials for on-boarding support and sales new hires.
+ \item Scoped, built, and released a wildly desired feature with a team of 3 engineers.
+\item Interviewed 85 candidates in engineering, support, sales, and product management.
+\item Created 8 week onboarding process for new support engineers.
+\item Member of 2017 Presidents Club for outstanding contribution to sales team.
 \end{itemize}
  }
 
 \cventry{Jul 2013 - May 2015}{Member of Technical Staff}{Delphix}{San Francisco, CA}{}{
-\cventrysection{Led the security team.}
+Contributed to the Zettabyte Filesystem (ZFS) kernel module. Responsible for developer productivity and devops. Responsible for product security and running the security team.
 \begin{itemize}
-\item Ran weekly meetings to plan security improvements and respond to incidents.
-\item Advised engineers in the development of majority security projects.
-% \item Advised the implementation of challenge/response login to Delphix engine.
-\item Created a signing server that provided code signatures for authenticated upgrades.
-\end{itemize}
-\vspace{\entrysectionspace}
-% \cventrysection{Owner of developer build infrastructure.}
-% \begin{itemize}
-% \item Introduced Puppet and Jenkins Job DSL to manage server configuration.
+\item Evangelized the ZFS team by talking at open source conferences and giving college tech talks.
+\item Extended ZFS to allow the live removal of devices from the storage pool (patent pending).
+\item Built ZFS block allocation strategy that defragmented on-line devices based on load.
+\item Introduced Puppet and Jenkins Job DSL to programmatically manage build server configuration.
 % \item Built infrastructure for compiling and managing third party packages.
 % \item Built processes for creating new build servers capable of compiling DelphixOS.
-% \end{itemize}
-\cventrysection{Contributed to the Zettabyte Filesystem (ZFS) team.}
-\begin{itemize}
-\item Evangelized the team by talking at college career fairs and open source conferences.
-\item Extended ZFS to allow the live removal of devices from the storage pool.
-\item Built ZFS block allocation strategy that defragmented on-line devices based on load.
-\item Created tool \texttt{zfs-precommit} to improve efficiency of ZFS developers.
+% \item Advised an engineer building challenge/response login to Delphix engine.
+\item Introduced and ran weekly meetings to plan security improvements and respond to incidents.
+\item Created a signing server that provided code signatures for authenticated upgrades.
 \end{itemize}
  }
 
 \cventry{Spring 2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
 {
-\cventrysection{15-418 Parallel Computer Architecture and Programming}
+Taught recitations for 15-418 Parallel Computer Architecture and Programming.
 \begin{itemize}
 \item Mentored students on computer systems final projects.
 \end{itemize}
 }
 
-\cventry{Summer 2012}{Software Engineer Intern (OSX Performance)}{Apple Inc.}{Cupertino, CA}{}{}
+\cventry{Summer 2012}{Software Engineer Intern (OSX Performance)}{Apple Inc.}{Cupertino, CA}{}{
+Responsible for building system for visualizing and evaluating kernel virtual memory system.
+}
 
-\cventry{Summer 2011}{Software Engineer Intern (Social Search Ads)}{Google Inc.}{Mountain View, CA}{}{}
-%\begin{itemize}
-%\item Experimented with different interfaces for social search ads.
-%\item Led a group to develop an novel privacy interface for the Google Fishbowl hackathon.
-%\item Organized an educational computer security Capture The Flag competition.
-%\end{itemize}
+\cventry{Summer 2011}{Software Engineer Intern (Social Search Ads)}{Google Inc.}{Mountain View, CA}{}{
+Experimented with different interfaces for social search ads.
+\begin{itemize}
+\item Led a group to win 1st of over 20 teams in internal hackathon with an novel privacy interface.
+\item Organized an educational computer security Capture The Flag competition for over 50 employees.
+\end{itemize}
+}
 
 \cventry{Fall 2010}{Teaching Assistant}{Carnegie Mellon University in Qatar}{Doha, Qatar}{}
 {
-\cventrysection{15-211 Fundamentals of Data Structures and Algorithms}
+Taught recitations for 15-211 Fundamentals of Data Structures and Algorithms.
 }
 
 \cventry{Summer 2010}{Software Engineer Intern (Kindle Sales)}{Amazon.com}{Seattle, WA}{}
-{}
+{
+Responsible for improving accessibility of kindle website and creating marketing emails.
+}
 
 \cventry{Spring 2010}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}{
-\cventrysection{15-123 Systems Skills in C and Unix}
+Taught recitations for 15-123 Systems Skills in C and Unix.
+}
+
+\cventry{Spring 2010}{Research Assistant}{Carnegie Mellon University Robotics Institue}{Pittsburgh, PA}{}{
+Developed a GUI to control automated agricultural robots.
 }
 
 \section{Education}
