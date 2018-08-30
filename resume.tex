@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,letterpaper]{moderncv}
+\documentclass[11pt,letterpaper]{moderncv}
 
 % moderncv themes
 					      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -22,7 +22,7 @@
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 \newcommand{\responsibilities}[1]{#1}
-\newcommand{\achievements}[1]{#1}
+\newcommand{\achievements}[1]{\vspace{.1cm} #1}
 
 \usepackage{multicol}
 
@@ -50,26 +50,43 @@
 \vspace{-0.5cm}
 
 \section{Experience}
- \cventry{Oct 2017 - Mar 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
-\responsibilities{Responsible for stabilizing the backend website and bringing process to the engineering team.}
+
+\cventry{May 2018 - July 2018}{Backend Engineer}{Brex}{San Francisco, CA}{}{
+\responsibilities{Responsible for improving engineering at Brex.}
 \achievements{\begin{itemize}
-\item Mentored engineering team on software architecture, project planning, and CI/CD practices.
-\item Introduced Go and SQL to engineering team for more efficient backend server development.
+\item Improved developer ramp time by documenting developer environment and application structure.
+\item Reduced support load by 60\% by revamping accounting software integration.
 \end{itemize}}
 }
 
-\cventry{May 2015 - Oct 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
-\responsibilities{Responsible for the performance of a real time database. Responsible for a team capable of diagnosing issues in production environments. Responsible for building a self-sustaining post-sales organization.}
+\vspace{0.4cm}
+
+\cventry{Oct 2017 - Mar 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
+\responsibilities{Responsible for stabilizing the backend website and bringing process to the engineering team.}
 \achievements{\begin{itemize}
- \item Created a company incident response process unifying sales, engineering, support, and marketing. 
- \item Introduced post-mortems, the USE method, and flamegraphs to standardize the debugging process.
- \item Mentored a college intern on a C++ project and helped them write a viral blog post.
- \item Scoped, built, and released a wildly desired feature with a team of 3 engineers.
+\item Introduced project planning and CI/CD practices to engineering team.
+\item Enabled BI tools and transactional writes by leading migration from MongoDB to PostgreSQL.
+\item Improved engineering efficiency by building new Go architecture with static analysis tools.
+\item Dramatically reduced cash drag with new SQL payment system.
+\end{itemize}}
+}
+
+\vspace{0.4cm}
+
+\cventry{May 2015 - Oct 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
+\responsibilities{Responsible for the performance of a real time database in production environments. Responsible for building a self-sustaining post-sales organization.}
+\achievements{\begin{itemize}
+\item Created a company incident response process unifying sales, engineering, support, and marketing. 
+\item Introduced post-mortems, the USE method, and flamegraphs to standardize the debugging process.
+\item Mentored a college intern on a C++ project and helped them write a viral blog post.
+\item Scoped, built, and released a wildly desired feature with a team of 3 engineers.
 \item Interviewed 85 candidates in engineering, support, sales, and product management.
 \item Created 8 week onboarding process for new support engineers.
 \item Member of 2017 Presidents Club for outstanding contribution to sales team.
 \end{itemize}}
  }
+
+\vspace{0.4cm}
 
 \cventry{Jul 2013 - May 2015}{Member of Technical Staff}{Delphix}{San Francisco, CA}{}{
 \responsibilities{Contributed to the Zettabyte Filesystem (ZFS) kernel module. Responsible for developer productivity and devops. Responsible for product security and running the security team.}
@@ -78,66 +95,23 @@
 \item Extended ZFS to allow the live removal of devices from the storage pool (patent pending).
 \item Built ZFS block allocation strategy that defragmented on-line devices based on load.
 \item Introduced Puppet and Jenkins Job DSL to programmatically manage build server configuration.
-% \item Built infrastructure for compiling and managing third party packages.
-% \item Built processes for creating new build servers capable of compiling DelphixOS.
-% \item Advised an engineer building challenge/response login to Delphix engine.
 \item Introduced and ran weekly meetings to plan security improvements and respond to incidents.
 \item Created a signing server that provided code signatures for authenticated upgrades.}
 \end{itemize}
  }
 
-\cventry{Spring 2013}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}
-{
-\responsibilities{Taught recitations for 15-418 Parallel Computer Architecture and Programming.}
-\achievements{\begin{itemize}
-\item Mentored students on computer systems final projects.
-\end{itemize}}
-}
-
-\cventry{Summer 2012}{Software Engineer Intern (OSX Performance)}{Apple Inc.}{Cupertino, CA}{}{
-\responsibilities{Responsible for building system for visualizing and evaluating kernel virtual memory system.}
-}
-
-\cventry{Summer 2011}{Software Engineer Intern (Social Search Ads)}{Google Inc.}{Mountain View, CA}{}{
-\responsibilities{Experimented with different interfaces for social search ads.}
-\achievements{\begin{itemize}
-\item Led a group to win 1st of over 20 teams in internal hackathon with an novel privacy interface.
-\item Organized an educational computer security Capture The Flag competition for over 50 employees.
-\end{itemize}}
-}
-
-\cventry{Fall 2010}{Teaching Assistant}{Carnegie Mellon University in Qatar}{Doha, Qatar}{}
-{
-\responsibilities{Taught recitations for 15-211 Fundamentals of Data Structures and Algorithms.}
-}
-
-\cventry{Summer 2010}{Software Engineer Intern (Kindle Sales)}{Amazon.com}{Seattle, WA}{}
-{
-\responsibilities{Responsible for improving accessibility of kindle website and creating marketing emails.}
-}
-
-\cventry{Spring 2010}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{}{
-\responsibilities{Taught recitations for 15-123 Systems Skills in C and Unix.}
-}
-
-\cventry{Spring 2010}{Research Assistant}{Carnegie Mellon University Robotics Institue}{Pittsburgh, PA}{}{
-\responsibilities{Developed a GUI to control automated agricultural robots.}
-}
-
 \section{Education}
 \cventry{2009 - 2013}{BS in Computer Science and Mathematics}{Carnegie Mellon
-University}{3.8 QPA}{}{}
+University}{3.8 QPA}{}{
+\begin{itemize}
+\item Interned at Amazon (Kindle Sales), Google (Social Search Ads), and Apple (OSX Performance).
+\item Worked as teaching assistant for 3 classes, including 15-418 Parallel Computer Architecture. % and Programming.
+\item Joined Plaid Parliament of Pwning, the world's best competitive hacking team.
+\end{itemize}
+}
 
 \section{Extracurriculars}
 \cventry{2012-2018}{Assistant Scoutmaster}{Boy Scouts of America}{}{}{}
-%\cventry{2011-2015}{Member}{Plaid Parliament of Pwning}{}{}{
-%\begin{multicols}{2}
-%\begin{itemize}
-%\item 1st Place DEFCON CTF 2013, 2014
-%\item 1st Place GITS CTF 2012-2015
-%\end{itemize}
-%\end{multicols}
-%}
 \cventry{Fall 2012}{President}{Sigma Tau Gamma Fraternity, Delta Xi Chapter}{}{}{}
 \cventry{2008}{Eagle Scout}{Boy Scouts of America}{}{}{}
 
