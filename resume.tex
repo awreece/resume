@@ -22,7 +22,7 @@
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 \newcommand{\responsibilities}[1]{#1}
-\newcommand{\achievements}[1]{\vspace{.1cm} #1}
+\newcommand{\achievements}[1]{#1}
 
 \usepackage{multicol}
 
@@ -39,7 +39,7 @@
 \originalrecomputecvlengths%
 \setlength{\quotewidth}{0.9\textwidth}}
 
-\nopagenumbers{} 
+\nopagenumbers{}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -47,55 +47,76 @@
 \begin{document}
 \maketitle
 
-\vspace{-0.5cm}
+\vspace{-1cm}
 
 \section{Experience}
+
+\cventry{Oct 2018 - Current}{Engineering Manager}{Twitter}{San Francisco, CA}{}{
+\responsibilities{Responsible for managing the Revenue Core SRE team (8 engineers: 4 SWE \& 4 SRE). \\
+                  Responsible for making strategic software investments to improve the reliability of Twitter.}
+\achievements{\begin{itemize}
+\item Hired 5 engineers onto the team, including 4 SWEs and 1 Senior Staff SWE.
+\item Mentored, grew, and successfully promoted 4 engineers on the team.
+\item Team won ``DERP-y'' award (top 5 engineering team in the company). % for improving weekly successful deploy rate of some teams at Twitter by 2x.
+\item Built consensus on and standardized SRE org-wide interview screen questions.
+\item Created and rolled-out improved Twitter engineering-wide promotion packet template.
+\end{itemize}}
+}
+
+\vspace{0.2cm}
+
+
 
 \cventry{May 2018 - July 2018}{Backend Engineer}{Brex}{San Francisco, CA}{}{
 \responsibilities{Responsible for improving engineering at Brex.}
 \achievements{\begin{itemize}
 \item Improved developer ramp time by documenting developer environment and application structure.
-\item Reduced support load by 60\% by revamping accounting software integration.
+\item Reduced support load by 60\% by revamping line item sync in accounting software integration.
 \end{itemize}}
 }
 
-\vspace{0.4cm}
+\vspace{0.2cm}
 
 \cventry{Oct 2017 - Mar 2018}{Lead Engineer}{AlphaFlow}{San Francisco, CA}{}{
 \responsibilities{Responsible for stabilizing the backend website and bringing process to the engineering team.}
 \achievements{\begin{itemize}
 \item Introduced project planning and CI/CD practices to engineering team.
 \item Enabled BI tools and transactional writes by leading migration from MongoDB to PostgreSQL.
-\item Improved engineering efficiency by building new Go architecture with static analysis tools.
 \item Dramatically reduced cash drag with new SQL payment system.
+% \item Improved engineering efficiency by building new Go architecture with static analysis tools.
 \end{itemize}}
 }
 
-\vspace{0.4cm}
+\vspace{0.2cm}
 
 \cventry{May 2015 - Oct 2017}{Senior Performance Engineer}{MemSQL}{San Francisco, CA}{}{
-\responsibilities{Responsible for the performance of a real time database in production environments. Responsible for building a self-sustaining post-sales organization.}
+\responsibilities{Responsible for the performance of a real time database in production environments. \\
+Responsible for building a self-sustaining post-sales organization.}
 \achievements{\begin{itemize}
-\item Created a company incident response process unifying sales, engineering, support, and marketing. 
-\item Introduced post-mortems, the USE method, and flamegraphs to standardize the debugging process.
+\item Created a company incident response process unifying sales, engineering, support, and marketing.
+% \item Introduced post-mortems, the USE method, and flamegraphs to standardize the debugging process.
 \item Mentored a college intern on a C++ project and helped them write a viral blog post.
-\item Scoped, built, and released a wildly desired feature with a team of 3 engineers.
 \item Interviewed 85 candidates in engineering, support, sales, and product management.
-\item Created 8 week onboarding process for new support engineers.
-\item Member of 2017 Presidents Club for outstanding contribution to sales team.
+% \item Created 8 week onboarding process for new support engineers.
+\item Scoped, built, and released a in-database resource profiling with a team of 3 engineers.
+\item Invited to 2017 Presidents Club (top 2 engineer in the company) for contribution to sales team.
 \end{itemize}}
  }
 
-\vspace{0.4cm}
+\vspace{0.2cm}
 
 \cventry{Jul 2013 - May 2015}{Member of Technical Staff}{Delphix}{San Francisco, CA}{}{
-\responsibilities{Contributed to the Zettabyte Filesystem (ZFS) kernel module. Responsible for developer productivity and devops. Responsible for product security and running the security team.}
+\responsibilities{
+Contributed to the Zettabyte Filesystem (ZFS) kernel module. \\
+Responsible for developer productivity and devops. 
+% \\ Responsible for product security and running the security team.
+}
 \achievements{\begin{itemize}
 \item Evangelized the ZFS team by talking at open source conferences and giving college tech talks.
-\item Extended ZFS to allow the live removal of devices from the storage pool (patent pending).
+\item \href{https://patents.justia.com/patent/10372329}{Patent US10372329} for extending ZFS to allow the live removal of devices from the storage pool.
 \item Built ZFS block allocation strategy that defragmented on-line devices based on load.
 \item Introduced Puppet and Jenkins Job DSL to programmatically manage build server configuration.
-\item Introduced and ran weekly meetings to plan security improvements and respond to incidents.
+% \item Introduced and ran weekly meetings to plan security improvements and respond to incidents.
 \item Created a signing server that provided code signatures for authenticated upgrades.}
 \end{itemize}
  }
